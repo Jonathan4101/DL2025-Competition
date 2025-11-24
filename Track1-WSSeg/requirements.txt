@@ -1,0 +1,12 @@
+2.0.0+cu118
+torchvision==0.15.1+cu118
+numpy
+tqdm
+tensorboard
+tensorboardX
+ml-collections
+medpy
+SimpleITK
+scipy
+h5py
+rasterio==1.2.10
