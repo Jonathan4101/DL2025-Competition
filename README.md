@@ -6,6 +6,12 @@
 
 ## 训练指南
 
+1. 进入 Track1-WSSSeg 文件夹中
+   ```bash
+   cd ./Track1-WSSSeg
+   ```
+
+
 1. 下载预训练的ViT-B_16权重文件，放到 *"./networks/pre-train_model/imagenet21k"* 目录下。
    - [**谷歌Drive**](https://drive.google.com/file/d/10Ao75MEBlZYADkrXE4YLg6VObvR0b2Dr/view?usp=sharing)
    - [**北外网盘**](https://icloud.bfsu.edu.cn/f/dfd84e4d1c7b4feb9b4d/?dl=1)
@@ -19,7 +25,14 @@
 4. 运行训练脚本
    ```bash
    python train.py --dataset Chesapeake --batch_size 10 --max_epochs 100 --savepath experiments --gpu 0
+   ```
 
 5. 运行测试脚本
    ```bash
    python test.py --dataset Chesapeake --model_path *The path of trained .pth file* --save_path experiments/results --gpu 0
+   ```
+
+1. 将 .csv 文件下载到本地，提交到Kaggle平台。注意，Team的名称采用中文真实姓名。
+
+# 赛道2：人脸图像恢复
+
