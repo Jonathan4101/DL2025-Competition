@@ -11,6 +11,9 @@
 
 # 赛道1：弱监督的语义分割
 
+## 请注意，前一版本的数据集分辨率有误，请重新在下面的链接下载数据集，重新训练或测试！
+- **北外网盘：[https://icloud.bfsu.edu.cn/f/110dac36950949daad1c/?dl=1](https://icloud.bfsu.edu.cn/f/110dac36950949daad1c/?dl=1)**
+
 **通过此链接进入竞赛主页：[https://www.kaggle.com/competitions/semantic-segmentation](https://www.kaggle.com/competitions/semantic-segmentation)**
 
 **本题目来自下面的工作，参考代码也来自作者的官方Baseline，感谢！**
