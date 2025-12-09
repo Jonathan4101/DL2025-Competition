@@ -128,3 +128,5 @@ taming
 *nohup*
 pretrained-models
 **/**.npz
+**.tif
+data.zip

@@ -7,7 +7,7 @@ import csv
 
 # ================= 配置区域 =================
 # 选手的预测结果文件夹 (里面放着 16分类 的预测图)
-USER_PRED_DIR = "./dataset/Chesapeake_NewYork_dataset/HR_lable_truth"      #请将grountruth修改为你保存图片的文件夹路径
+USER_PRED_DIR = "./experiments/results"      #请将grountruth修改为你保存图片的文件夹路径
 OUTPUT_CSV = "./experiments/submission_gt.csv"    #submission_1.csv为程序运行后输出的csv文件保存路径
 
 # 切片配置
@@ -21,12 +21,29 @@ TARGET_CLASS_IDS = [1, 2, 3, 4]
 # 确保选手的 16 种细分地物能正确归类到 Water, Tree, LowVeg, Built-up
 # -------------------------------------------------------------------------
 CLASS_MAPPING = {
-    1: 1,  # water 水体 → Water
-    2: 2,  # tree canopy 树冠 → Tree canopy
-    3: 3,  # low vegetation 低植被 → Low vegetation
-    4: 3,  # barren 荒地 → Low vegetation
-    5: 4,  # impervious (other) 不透水地（其他）→ Built-up
-    6: 4   # impervious (road) 不透水地（道路）→ Built-up
+    # === Water (1) ===
+    1: 1,   # Open Water 开阔水域
+    2: 1,   # Perennial Ice/Snow 永久冰雪
+    15: 1,  # Woody Wetlands 林湿地
+    16: 1,  # Herbaceous Wetlands 草本湿地
+    
+    # === Tree Canopy (2) ===
+    8: 2,   # Deciduous Forest 落叶林
+    9: 2,   # Evergreen Forest 常绿林
+    10: 2,  # Mixed Forest 混合林
+    
+    # === Low Vegetation (3) ===
+    7: 3,   # Barren Land 荒地
+    11: 3,  # Shrub/Scrub 灌木
+    12: 3,  # Grassland 草地
+    13: 3,  # Pasture/Hay 牧场
+    14: 3,  # Cultivated Crops 农作物
+    
+    # === Built-up (4) ===
+    3: 4,   # Developed, Open Space 开发-开放
+    4: 4,   # Developed, Low Intensity 开发-低密度
+    5: 4,   # Developed, Medium Intensity 开发-中密度
+    6: 4    # Developed, High Intensity 开发-高密度
 }
 
 # ================= 工具函数 =================

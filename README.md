@@ -14,10 +14,11 @@
 ## 请注意，前一版本的数据集分辨率有误，请重新在下面的链接下载数据集，重新测试（如果已经在先前的数据集上完成了训练，可以不用重新训练）！
 - **北外网盘：[https://icloud.bfsu.edu.cn/f/110dac36950949daad1c/?dl=1](https://icloud.bfsu.edu.cn/f/110dac36950949daad1c/?dl=1)**
 
+## 请注意 Convert.py 函数有更新，会显著影像kaggle得分计算！
+
 **通过此链接进入竞赛主页：[https://www.kaggle.com/competitions/semantic-segmentation](https://www.kaggle.com/competitions/semantic-segmentation)**
 
-**本题目来自下面的工作，参考代码也来自作者的官方Baseline，感谢！**
-- [**Paraformer: Updating Large-scale High-resolution Geographical Maps from Limited Historical Labels**](https://openaccess.thecvf.com/content/CVPR2024/papers/Li_Learning_without_Exact_Guidance_Updating_Large-scale_High-resolution_Land_Cover_Maps_CVPR_2024_paper.pdf)
+  - [**Paraformer: Updating Large-scale High-resolution Geographical Maps from Limited Historical Labels**](https://openaccess.thecvf.com/content/CVPR2024/papers/Li_Learning_without_Exact_Guidance_Updating_Large-scale_High-resolution_Land_Cover_Maps_CVPR_2024_paper.pdf)
 - [GitHub原始仓库](https://github.com/LiZhuoHong/Paraformer)
 
 ## 训练指南
