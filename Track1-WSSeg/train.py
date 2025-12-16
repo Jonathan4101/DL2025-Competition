@@ -6,7 +6,7 @@ import torch
 import torch.backends.cudnn as cudnn
 from networks.vit_seg_modeling import VisionTransformer as ViT_seg
 from networks.vit_seg_modeling import CONFIGS as CONFIGS_ViT_seg
-from trainer import trainer_dataset
+from trainer5 import trainer_dataset
 import os
 from networks.vit_seg_modeling_L2HNet import L2HNet
 
@@ -14,9 +14,9 @@ parser = argparse.ArgumentParser()
 parser.add_argument('--dataset', type=str, default='Chesapeake', help='experiment_name')
 parser.add_argument('--max_epochs', type=int, default=100, help='maximum epoch number to train')
 parser.add_argument('--batch_size', type=int, default=16, help='batch_size per gpu')
-parser.add_argument('--base_lr', type=float,  default=0.01, help='segmentation network learning rate')
+parser.add_argument('--base_lr', type=float,  default=0.0005, help='segmentation network learning rate')
 parser.add_argument('--seed', type=int, default=1234, help='random seed')
-parser.add_argument('--CNN_width', type=int, default=64, help='L2HNet_width_size, default is 64: light mode. Set to 128: normal mode')
+parser.add_argument('--CNN_width', type=int, default=128, help='L2HNet_width_size, default is 64: light mode. Set to 128: normal mode')
 parser.add_argument('--savepath', type=str)
 parser.add_argument('--gpu', type=str, help='Select GPU number to train' )
 args = parser.parse_args()
