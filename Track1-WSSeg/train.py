@@ -6,7 +6,7 @@ import torch
 import torch.backends.cudnn as cudnn
 from networks.vit_seg_modeling import VisionTransformer as ViT_seg
 from networks.vit_seg_modeling import CONFIGS as CONFIGS_ViT_seg
-from trainer5 import trainer_dataset
+from trainere4 import trainer_dataset
 import os
 from networks.vit_seg_modeling_L2HNet import L2HNet
 
